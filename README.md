@@ -30,5 +30,6 @@ No olvides incluir feedback al usuario.
 ```
 
 
-![Pasapalabra]("./pasapalabra.png")
+![Pasapalabra](./pasapalabra.png)
+
 ```
