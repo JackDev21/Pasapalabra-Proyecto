@@ -515,7 +515,7 @@ const getQuestions = () => {
 
 const timeDisplay = () => {
     const timer = document.querySelector('.timer');
-    let timeValue = 120;
+    let timeValue = 200;
 
     crono = setInterval(() => { // setInterval es una función que crea un temporizador
         timer.innerHTML = timeValue; // Se muestra el tiempo en el elemento con la clase .timer
