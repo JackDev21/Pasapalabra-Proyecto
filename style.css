@@ -620,11 +620,36 @@ footer {
 }
 
 
+@media only screen and (max-width: 1440px) {
+
+    .panel-scoretime {
+        top: 27vh
+    }
+
+    .score {
+        left: 1vh
+    }
+
+    .timer {
+        right: 1vh
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
     .panel-game {
         max-width: 30vw;
         position: relative;
         left: 7vw;
+    }
+
+    .timer {
+        left: 1vw;
+
+    }
+
+    .score {
+        left: 1vw;
     }
 
     .info-game {
@@ -711,7 +736,7 @@ footer {
 
     .info-game {
         width: auto;
-        top: 135vh;
+        top: 140vh;
         left: 40vh;
         padding: 5px;
         margin-bottom: 10px;
