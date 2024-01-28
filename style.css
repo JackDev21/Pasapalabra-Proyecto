@@ -148,7 +148,6 @@ li {
     top: 35vh;
     left: 20.5vw;
 
-
 }
 
 .circle .letter:nth-child(1) {
@@ -670,6 +669,9 @@ footer {
         /* Encoge el círculo a 80% de su tamaño original */
     }
 
+    footer {
+        left: 25vw
+    }
 
 }
 
@@ -683,8 +685,6 @@ footer {
         background-size: cover;
         background-repeat: repeat;
         background-position: center;
-
-
     }
 
     footer {
@@ -712,9 +712,7 @@ footer {
         max-width: 400vw;
     }
 
-    .start {
-        left: 8vw;
-    }
+
 
     .panel-scoretime {
         left: -15vw;
@@ -735,12 +733,29 @@ footer {
     }
 
     .info-game {
-        width: auto;
+        max-width: 60vw;
         top: 140vh;
-        left: 40vh;
+        left: 35vh;
         padding: 5px;
-        margin-bottom: 10px;
+        padding-bottom: 50px;
+
     }
+
+    .end-game {
+        top: 55vh;
+        left: 25vw;
+    }
+
+    .panel-circle {
+        max-width: 100vw;
+    }
+
+    .result {
+        max-width: 500px;
+    }
+
+
+
 
 
 }
