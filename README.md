@@ -27,6 +27,8 @@ El juego deberá, cuando finalize, mostrar un ranking de usuarios con el nombre 
 
 No olvides incluir feedback al usuario.
 
-
 ```
 
+
+![Pasapalabra]("./pasapalabra.png")
+```
