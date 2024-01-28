@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +15,7 @@ body {
     background-image: url(./img/fondosimpson.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -359,7 +361,7 @@ li {
 
 
 .info-game {
-    width: 850px;
+    width: 900px;
     height: auto;
     display: flex;
     flex-direction: column;

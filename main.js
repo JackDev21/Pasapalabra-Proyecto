@@ -1,5 +1,4 @@
 
-
 const sumOfQuestions = [
     [
         {
@@ -478,10 +477,7 @@ const sumOfQuestions = [
             question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?3",
         }
     ]
-
-
 ];
-
 
 
 
@@ -495,6 +491,20 @@ let crono;
 let scoreValue = 27;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
+
+const questionJS = document.querySelector('.question');
+const send = document.querySelector('#btnsend');
+const startButton = document.querySelector('#btn-start');
+const playAgain = document.querySelector('#play-again');
+const endGameDisplay = document.querySelector('.end-game');
+const panelGame = document.querySelector('.panel-game');
+const closeButton = document.querySelector('#btnclose');
+const buttonPasapalabra = document.querySelector('#btnpasapalabra');
+const score = document.querySelector('.score');
+const userAnswer = document.querySelector('#txtAnswer');
+const letter = document.querySelectorAll('.letter');
+const result = document.querySelector('.result-container .result');
+const restartButton = document.querySelector('#play-again');
 
 const getQuestions = () => {
     // Recorre el array sumOfQuestions que contiene preguntas agrupadas por letra
@@ -510,6 +520,35 @@ const getQuestions = () => {
     }
     // Devuelve el array de preguntas generado
     return questions;
+};
+
+
+const startGame = () => {
+    // Verifica si el juego ya está en progreso antes de iniciarlo nuevamente
+    if (index === -1 || (correctAnswers + incorrectAnswers) === 0) {
+        // Restablecer el array de preguntas
+        questions = getQuestions();
+
+        // Restablecer el índice, la ronda y las respuestas
+        index = -1; // El índice se inicia en -1 porque el juego comienza en la pregunta 0
+        round = 1;
+        correctAnswers = 0;
+        incorrectAnswers = 0;
+
+        nextQuestion(); // Muestra la primera pregunta
+
+        startButton.disabled = true;
+
+        // Configurar el temporizador solo si no está activo
+        if (!crono) {
+            // Restablecer el tiempo y mostrarlo
+            timeDisplay();
+        }
+        // Restablecer el estado de las preguntas
+        questions.forEach(question => {
+            question.status = 0;
+        });
+    }
 };
 
 
@@ -544,8 +583,6 @@ const nextRound = () => {
 };
 
 
-
-const questionJS = document.querySelector('.question');
 // Función que verifica el estado del juego y toma decisiones en consecuencia
 const checkStatus = () => {
     // Si se han respondido todas las preguntas, finaliza el juego
@@ -594,10 +631,10 @@ const passButton = () => {
 
 
 const checkAnswer = () => {
-    let answerUser = userAnswer.value.toLowerCase().trim();
+    let answerUser = userAnswer.value.toLowerCase().trim(); // respuesta usuario en minúsculas y sin espacios
 
-    if (answerUser === questions[index].answer.toLowerCase().trim()) {
-        letter[index].classList.add("correct-answer");
+    if (answerUser === questions[index].answer.toLowerCase().trim()) { // Compara la respuesta del usuario con la respuesta correcta
+        letter[index].classList.add("correct-answer"); // Agrega la clase correct-answer al elemento correspondiente para pintar el fondo 
         correctAnswers++;
         questions[index].status = 1;
         scoreValue--;
@@ -610,44 +647,6 @@ const checkAnswer = () => {
     userAnswer.value = "";
     checkStatus();
 };
-
-
-
-const startGame = () => {
-    // Verifica si el juego ya está en progreso antes de iniciarlo nuevamente
-    if (index === -1 || (correctAnswers + incorrectAnswers) === 0) {
-        // Restablecer el array de preguntas
-        questions = getQuestions();
-
-        // Restablecer el índice, la ronda y las respuestas
-        index = -1; // El índice se inicia en -1 porque el juego comienza en la pregunta 0
-        round = 1;
-        correctAnswers = 0;
-        incorrectAnswers = 0;
-
-
-        nextQuestion(); // Muestra la primera pregunta
-
-
-        startButton.disabled = true;
-
-
-        // Configurar el temporizador solo si no está activo
-        if (!crono) {
-            // Restablecer el tiempo y mostrarlo
-            timeDisplay();
-        }
-
-        // Restablecer el estado de las preguntas
-        questions.forEach(question => {
-            question.status = 0;
-        });
-
-
-    }
-
-};
-
 
 
 const restartGame = () => {
@@ -673,17 +672,13 @@ const restartGame = () => {
         timeDisplay();
     }
     nextQuestion();
-
-
 }
-
 
 const closeGame = () => {
     endGame();
     result.style.visibility = 'visible';
 
 };
-
 
 const endGame = () => {
     clearInterval(crono);
@@ -693,18 +688,7 @@ const endGame = () => {
     showResult();
 };
 
-const send = document.querySelector('#btnsend');
-const startButton = document.querySelector('#btn-start');
-const playAgain = document.querySelector('#play-again');
-const endGameDisplay = document.querySelector('.end-game');
-const panelGame = document.querySelector('.panel-game');
-const closeButton = document.querySelector('#btnclose');
-const buttonPasapalabra = document.querySelector('#btnpasapalabra');
-const score = document.querySelector('.score');
-const userAnswer = document.querySelector('#txtAnswer');
-const letter = document.querySelectorAll('.letter');
-const result = document.querySelector('.result-container .result');
-const restartButton = document.querySelector('#play-again');
+
 
 send.addEventListener('click', checkAnswer);
 startButton.addEventListener('click', startGame);
@@ -712,3 +696,9 @@ closeButton.addEventListener('click', closeGame);
 playAgain.addEventListener('click', restartGame);
 buttonPasapalabra.addEventListener('click', passButton);
 restartButton.addEventListener('click', restartGame);
+
+
+const userName = () => {
+
+
+}
