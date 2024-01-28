@@ -13,6 +13,8 @@ body {
     background-image: url(./img/fondosimpson.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
+
 }
 
 li {
@@ -50,21 +52,23 @@ li {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 4vh;
-    left: 1vw;
-    font-size: 3vw;
+    top: 25vh;
+    left: 2vw;
+    font-size: 2.5vw;
+
 
 }
 
 .score {
-    width: 10%;
+    width: 15%;
     height: auto;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 3px solid black;
+    border-radius: 50%;
+
 }
 
 .timer {
@@ -74,8 +78,9 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 25px;
+
 
 }
 
@@ -132,6 +137,7 @@ li {
 }
 
 .circle {
+    font-size: 5vw;
     width: 40vw;
     height: 85vh;
 }
@@ -141,120 +147,121 @@ li {
     position: absolute;
     top: 35vh;
     left: 20.5vw;
-    font-size: 1.5vw;
+
+
 }
 
 .circle .letter:nth-child(1) {
-    transform: rotate(-90deg) translate(325px) rotate(90deg);
+    transform: rotate(-90deg) translate(21rem) rotate(90deg);
 }
 
 .circle .letter:nth-child(2) {
-    transform: rotate(-76.5deg) translate(325px) rotate(76.5deg);
+    transform: rotate(-76.5deg) translate(21rem) rotate(76.5deg);
 }
 
 .circle .letter:nth-child(3) {
-    transform: rotate(-63deg) translate(325px) rotate(63deg);
+    transform: rotate(-63deg) translate(21rem) rotate(63deg);
 }
 
 .circle .letter:nth-child(4) {
-    transform: rotate(-49.5deg) translate(325px) rotate(49.5deg);
+    transform: rotate(-49.5deg) translate(21rem) rotate(49.5deg);
 }
 
 .circle .letter:nth-child(5) {
-    transform: rotate(-36deg) translate(325px) rotate(36deg);
+    transform: rotate(-36deg) translate(21rem) rotate(36deg);
 }
 
 .circle .letter:nth-child(6) {
-    transform: rotate(-22.5deg) translate(325px) rotate(22.5deg);
+    transform: rotate(-22.5deg) translate(21rem) rotate(22.5deg);
 }
 
 .circle .letter:nth-child(7) {
-    transform: rotate(-9deg) translate(325px) rotate(9deg);
+    transform: rotate(-9deg) translate(21rem) rotate(9deg);
 }
 
 .circle .letter:nth-child(8) {
-    transform: rotate(4.5deg) translate(325px) rotate(-4.5deg);
+    transform: rotate(4.5deg) translate(21rem) rotate(-4.5deg);
 }
 
 .circle .letter:nth-child(9) {
-    transform: rotate(18deg) translate(325px) rotate(-18deg);
+    transform: rotate(18deg) translate(21rem) rotate(-18deg);
 }
 
 .circle .letter:nth-child(10) {
-    transform: rotate(31.5deg) translate(325px) rotate(-31.5deg);
+    transform: rotate(31.5deg) translate(21rem) rotate(-31.5deg);
 }
 
 .circle .letter:nth-child(11) {
-    transform: rotate(45deg) translate(325px) rotate(-45deg);
+    transform: rotate(45deg) translate(21rem) rotate(-45deg);
 }
 
 .circle .letter:nth-child(12) {
-    transform: rotate(58.5deg) translate(325px) rotate(-58.5deg);
+    transform: rotate(58.5deg) translate(21rem) rotate(-58.5deg);
 }
 
 .circle .letter:nth-child(13) {
-    transform: rotate(72deg) translate(325px) rotate(-72deg);
+    transform: rotate(72deg) translate(21rem) rotate(-72deg);
 }
 
 .circle .letter:nth-child(14) {
-    transform: rotate(85.5deg) translate(325px) rotate(-85.5deg);
+    transform: rotate(85.5deg) translate(21rem) rotate(-85.5deg);
 }
 
 .circle .letter:nth-child(15) {
-    transform: rotate(99deg) translate(325px) rotate(-99deg);
+    transform: rotate(99deg) translate(21rem) rotate(-99deg);
 }
 
 .circle .letter:nth-child(16) {
-    transform: rotate(112.5deg) translate(325px) rotate(-112.5deg);
+    transform: rotate(112.5deg) translate(21rem) rotate(-112.5deg);
 }
 
 .circle .letter:nth-child(17) {
-    transform: rotate(126deg) translate(325px) rotate(-126deg);
+    transform: rotate(126deg) translate(21rem) rotate(-126deg);
 }
 
 .circle .letter:nth-child(18) {
-    transform: rotate(139.5deg) translate(325px) rotate(-139.5deg);
+    transform: rotate(139.5deg) translate(21rem) rotate(-139.5deg);
 }
 
 .circle .letter:nth-child(19) {
-    transform: rotate(153deg) translate(325px) rotate(-153deg);
+    transform: rotate(153deg) translate(21rem) rotate(-153deg);
 }
 
 .circle .letter:nth-child(20) {
-    transform: rotate(166.5deg) translate(325px) rotate(-166.5deg);
+    transform: rotate(166.5deg) translate(21rem) rotate(-166.5deg);
 }
 
 .circle .letter:nth-child(21) {
-    transform: rotate(180deg) translate(325px) rotate(-180deg);
+    transform: rotate(180deg) translate(21rem) rotate(-180deg);
 }
 
 .circle .letter:nth-child(22) {
-    transform: rotate(193.5deg) translate(325px) rotate(-193.5deg);
+    transform: rotate(193.5deg) translate(21rem) rotate(-193.5deg);
 }
 
 .circle .letter:nth-child(23) {
-    transform: rotate(207deg) translate(325px) rotate(-207deg);
+    transform: rotate(207deg) translate(21rem) rotate(-207deg);
 }
 
 .circle .letter:nth-child(24) {
-    transform: rotate(220.5deg) translate(325px) rotate(-220.5deg);
+    transform: rotate(220.5deg) translate(21rem) rotate(-220.5deg);
 }
 
 .circle .letter:nth-child(25) {
-    transform: rotate(234deg) translate(325px) rotate(-234deg);
+    transform: rotate(234deg) translate(21rem) rotate(-234deg);
 }
 
 .circle .letter:nth-child(26) {
-    transform: rotate(245.5deg) translate(325px) rotate(-247.5deg);
+    transform: rotate(245.5deg) translate(21rem) rotate(-247.5deg);
 }
 
 .circle .letter:nth-child(27) {
-    transform: rotate(258deg) translate(325px) rotate(-261deg);
+    transform: rotate(258deg) translate(21rem) rotate(-261deg);
 }
 
 .panel-game {
     font-family: 'Arial', sans-serif;
-    /* Fuente general para el panel */
+
     background-color: #ffffffd0;
     /* Color de fondo para el panel */
     border-radius: 15px;
@@ -269,6 +276,7 @@ li {
     /* Centrado horizontal y margen vertical */
     text-align: center;
     /* Alineación de texto al centro */
+
 }
 
 #txtAnswer {
@@ -352,7 +360,7 @@ li {
 
 
 .info-game {
-    width: 800px;
+    width: 850px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -465,22 +473,21 @@ li {
 .result-container {
     position: absolute;
     top: 40vh;
-    left: 17vw;
+    left: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: auto;
-
-
+    width: 25vw;
+    height: 12vw;
 }
+
+
 
 .result {
     color: green;
     font-size: 30px;
-    width: 305px;
-    height: 100px;
-    /* display: flex; */
+    width: 400px;
+    height: auto;
     text-align: center;
 }
 
@@ -596,4 +603,119 @@ footer {
     height: 60px;
     width: 500px;
     font-size: 25px;
+}
+
+
+/*Media Queries */
+
+@media only screen and (max-width: 1920px) {
+    .score {
+        left: 5vh
+    }
+
+    .timer {
+        right: 8vh
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .panel-game {
+        max-width: 30vw;
+        position: relative;
+        left: 7vw;
+    }
+
+    .info-game {
+        position: absolute;
+        left: 75vw;
+        top: 90vh;
+        max-width: 40vw;
+        font-size: 1rem;
+    }
+
+    .panel-circle {
+        position: relative;
+        left: 7vh;
+    }
+
+    .circle {
+        transform: scale(0.8);
+        /* Encoge el círculo a 80% de su tamaño original */
+    }
+
+
+}
+
+
+
+
+/* Media query para pantallas de hasta 768px de ancho y 1024px de alto */
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+
+
+    }
+
+    footer {
+        font-size: 20px;
+        left: 18vw;
+    }
+
+
+    .panel-circle .circle {
+        width: auto;
+        right: 33vw;
+
+    }
+
+    .circle {
+        transform: scale(1);
+        /* Encoge el círculo a 80% de su tamaño original */
+    }
+
+    .panel-game {
+        position: absolute;
+        top: 95vh;
+        right: 5vw;
+        text-align: center;
+        max-width: 400vw;
+    }
+
+    .start {
+        left: 8vw;
+    }
+
+    .panel-scoretime {
+        left: -15vw;
+        top: 24vh;
+        font-size: 5rem;
+    }
+
+    .score {
+        width: auto;
+        padding: 10px;
+        right: 10vw;
+    }
+
+    .timer {
+        width: auto;
+        padding: 10px;
+        left: 10vw;
+    }
+
+    .info-game {
+        width: auto;
+        top: 135vh;
+        left: 40vh;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+
 }
