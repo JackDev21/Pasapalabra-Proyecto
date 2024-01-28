@@ -480,7 +480,7 @@ const sumOfQuestions = [
 ];
 
 
-
+let userName;
 let randomQuestion;
 let questions = [];
 
@@ -505,6 +505,14 @@ const userAnswer = document.querySelector('#txtAnswer');
 const letter = document.querySelectorAll('.letter');
 const result = document.querySelector('.result-container .result');
 const restartButton = document.querySelector('#play-again');
+const infoquestion = document.querySelector(".question");
+const welcome = document.querySelector(".welcome");
+const correctName = document.querySelector(".correctName");
+const btnName = document.querySelector("#btnName");
+const instructions = document.querySelector(".instructions");
+const userWelcome = document.querySelector(".userWelcome");
+
+
 
 const getQuestions = () => {
     // Recorre el array sumOfQuestions que contiene preguntas agrupadas por letra
@@ -523,6 +531,30 @@ const getQuestions = () => {
 };
 
 
+
+
+const askName = () => {
+    userName = document.querySelector("#userName").value;
+
+    if (userName === "") {
+        correctName.textContent = "Ingrese un nombre válido";
+
+    } else {
+        userWelcome.textContent = `Bienvenido   ${userName}.`;
+        instructions.textContent = 'Lea atentamente las instrucciones';
+        welcome.style.visibility = 'hidden';
+        btnName.style.visibility = 'hidden';
+        buttonPasapalabra.style.visibility = 'visible';
+        send.style.visibility = 'visible';
+        infoquestion.style.visibility = 'visible';
+        userAnswer.style.visibility = 'visible';
+        welcome.style.visibility = 'hidden';
+        startButton.addEventListener('click', startGame);
+    }
+}
+
+
+
 const startGame = () => {
     // Verifica si el juego ya está en progreso antes de iniciarlo nuevamente
     if (index === -1 || (correctAnswers + incorrectAnswers) === 0) {
@@ -538,6 +570,14 @@ const startGame = () => {
         nextQuestion(); // Muestra la primera pregunta
 
         startButton.disabled = true;
+        buttonPasapalabra.style.visibility = 'visible';
+        send.style.visibility = 'visible';
+        infoquestion.style.visibility = 'visible';
+        userAnswer.style.visibility = 'visible';
+        welcome.style.visibility = 'hidden';
+        userWelcome.style.visibility = 'hidden';
+        instructions.style.visibility = 'hidden';
+
 
         // Configurar el temporizador solo si no está activo
         if (!crono) {
@@ -654,7 +694,10 @@ const restartGame = () => {
     panelGame.style.visibility = 'visible';
     endGameDisplay.style.display = 'none';
     result.style.visibility = 'hidden';
-
+    send.style.visibility = 'visible';
+    buttonPasapalabra.style.visibility = 'visible';
+    questionJS.style.visibility = 'visible';
+    userAnswer.style.visibility = 'visible';
 
     index = -1;
     round = 1;
@@ -684,6 +727,11 @@ const endGame = () => {
     clearInterval(crono);
     endGameDisplay.style.display = 'flex';
     panelGame.style.visibility = 'hidden';
+    send.style.visibility = 'hidden';
+    buttonPasapalabra.style.visibility = 'hidden';
+    questionJS.style.visibility = 'hidden';
+    userAnswer.style.visibility = 'hidden';
+
     startButton.disabled = true;
     showResult();
 };
@@ -691,14 +739,12 @@ const endGame = () => {
 
 
 send.addEventListener('click', checkAnswer);
-startButton.addEventListener('click', startGame);
 closeButton.addEventListener('click', closeGame);
 playAgain.addEventListener('click', restartGame);
 buttonPasapalabra.addEventListener('click', passButton);
 restartButton.addEventListener('click', restartGame);
+btnName.addEventListener('click', askName);
 
 
-const userName = () => {
 
 
-}
