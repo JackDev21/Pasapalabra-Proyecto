@@ -664,6 +664,18 @@ h4 {
     background-color: #45a049;
 }
 
+.showRanking {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 67vh;
+    font-size: 1.5rem;
+
+}
+
 
 
 footer {
@@ -828,8 +840,6 @@ footer {
     .result {
         max-width: 500px;
     }
-
-
 
 
 

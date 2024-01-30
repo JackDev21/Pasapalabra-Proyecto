@@ -32,6 +32,8 @@ const btnName = document.querySelector("#btnName");
 const instructions = document.querySelector(".instructions");
 const userWelcome = document.querySelector(".userWelcome");
 const correctName = document.querySelector(".correctName");
+const showRanking = document.querySelector(".showRanking");
+const infoGame = document.querySelector('.info-game')
 
 
 const getQuestions = () => {
@@ -96,6 +98,7 @@ const startGame = () => {
         welcome.style.visibility = 'hidden';
         userWelcome.style.visibility = 'hidden';
         instructions.style.visibility = 'hidden';
+        closeButton.addEventListener('click', closeGame);
 
 
         // Configurar el temporizador solo si no está activo
@@ -218,6 +221,8 @@ const restartGame = () => {
     buttonPasapalabra.style.visibility = 'visible';
     questionJS.style.visibility = 'visible';
     userAnswer.style.visibility = 'visible';
+    showRanking.style.visibility = 'hidden';
+    infoGame.style.visibility = 'visible';
 
     index = -1;
     round = 1;
@@ -255,12 +260,30 @@ const endGame = () => {
 
     startButton.disabled = true;
     showResult();
+    infoGame.style.visibility = 'hidden';
+    getRanking();
 };
 
 
 
+const getRanking = () => {
+    if (correctAnswers + incorrectAnswers === 27) { // Si la suma de respuestas correctas y incorrectas es 27
+        let ranking = []
+        const player = { name: userName, correctAnswers: correctAnswers }// Se crea un objeto con el nombre del usuario y las respuestas correctas
+        ranking.push(player); // Se agrega el objeto al array ranking
+        ranking.sort((a, b) => b.correctAnswers - a.correctAnswers); // Se ordena el array de mayor a menor por las respuestas correctas
+        ranking.forEach((player, index) => {
+            showRanking.innerHTML += `<p>${index + 1}. ${player.name} - ${player.correctAnswers} respuestas correctas</p>`
+
+        })
+    }
+}
+
+
+
+
 send.addEventListener('click', checkAnswer);
-closeButton.addEventListener('click', closeGame);
+
 playAgain.addEventListener('click', restartGame);
 buttonPasapalabra.addEventListener('click', passButton);
 restartButton.addEventListener('click', restartGame);
