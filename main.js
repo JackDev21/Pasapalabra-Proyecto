@@ -8,10 +8,12 @@ let questions = [];
 let index = 0;
 let round = 1;
 let crono;
+let gameStarted = true;
 
 let scoreValue = 27;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
+
 
 const questionJS = document.querySelector('.question');
 const send = document.querySelector('#btnsend');
@@ -34,6 +36,7 @@ const userWelcome = document.querySelector(".userWelcome");
 const correctName = document.querySelector(".correctName");
 const showRanking = document.querySelector(".showRanking");
 const infoGame = document.querySelector('.info-game')
+const timer = document.querySelector('.timer');
 
 
 const getQuestions = () => {
@@ -57,12 +60,15 @@ const askName = () => {
 
     userName = document.querySelector("#userName").value;
 
+
     if (userName === "") {
         correctName.textContent = "Ingrese un nombre válido";
 
     } else {
         userWelcome.textContent = `Bienvenido   ${userName}.`;
         instructions.textContent = 'Lea atentamente las instrucciones';
+        questionJS.textContent = "Pulsa la rosquilla para empezar la partida";
+        document.querySelector("#userName").value = "";
         welcome.style.visibility = 'hidden';
         btnName.style.visibility = 'hidden';
         buttonPasapalabra.style.visibility = 'visible';
@@ -70,15 +76,21 @@ const askName = () => {
         infoquestion.style.visibility = 'visible';
         userAnswer.style.visibility = 'visible';
         welcome.style.visibility = 'hidden';
+        panelGame.style.visibility = 'visible';
+
+        gameStarted = true;
+
         startButton.addEventListener('click', startGame);
     }
 }
 
 
-
 const startGame = () => {
-    // Verifica si el juego ya está en progreso antes de iniciarlo nuevamente
-    if (index === -1 || (correctAnswers + incorrectAnswers) === 0) {
+
+    if (gameStarted === true) {
+
+        gameStarted = false;
+
         // Restablecer el array de preguntas
         questions = getQuestions();
 
@@ -87,6 +99,7 @@ const startGame = () => {
         round = 1;
         correctAnswers = 0;
         incorrectAnswers = 0;
+        scoreValue = 27;
 
         nextQuestion(); // Muestra la primera pregunta
 
@@ -100,23 +113,21 @@ const startGame = () => {
         instructions.style.visibility = 'hidden';
         closeButton.addEventListener('click', closeGame);
 
+        crono = null;
+        timeDisplay();
 
-        // Configurar el temporizador solo si no está activo
-        if (!crono) {
-            // Restablecer el tiempo y mostrarlo
-            timeDisplay();
-        }
         // Restablecer el estado de las preguntas
         questions.forEach(question => {
             question.status = 0;
         });
     }
+
 };
 
 
 const timeDisplay = () => {
-    const timer = document.querySelector('.timer');
-    let timeValue = 120;
+    let timeValue = 200;
+
 
     crono = setInterval(() => { // setInterval es una función que crea un temporizador
         timer.innerHTML = timeValue; // Se muestra el tiempo en el elemento con la clase .timer
@@ -126,8 +137,8 @@ const timeDisplay = () => {
             endGame(); // Si el tiempo se acaba, se llama a la función endGame()
         }
     }, 1000); // Se ejecuta cada segundo
-};
 
+}
 
 const nextQuestion = () => {
     index = index + 1; // Incrementa el índice de pregunta
@@ -213,21 +224,23 @@ const checkAnswer = () => {
 
 const restartGame = () => {
 
+    welcome.style.visibility = 'visible';
     startButton.style.visibility = 'visible';
-    panelGame.style.visibility = 'visible';
     endGameDisplay.style.display = 'none';
     result.style.visibility = 'hidden';
-    send.style.visibility = 'visible';
-    buttonPasapalabra.style.visibility = 'visible';
-    questionJS.style.visibility = 'visible';
-    userAnswer.style.visibility = 'visible';
-    showRanking.style.visibility = 'hidden';
     infoGame.style.visibility = 'visible';
+    btnName.style.visibility = 'visible';
 
     index = -1;
     round = 1;
     correctAnswers = 0;
     incorrectAnswers = 0;
+    crono = null;
+
+    timer.innerHTML = 200; // Cambia '120' al valor inicial del tiempo que desees
+
+    // Restablecer el valor de scoreValue visualmente
+    score.textContent = 27;
 
 
     letter.forEach(letterelement => {
@@ -235,11 +248,11 @@ const restartGame = () => {
         letterelement.classList.remove("incorrect-answer");
     })
 
-    if (crono) {
-        // Restablecer el tiempo y mostrarlo
-        timeDisplay();
-    }
-    nextQuestion();
+
+    // Restablecer el estado de las preguntas
+    questions.forEach(question => {
+        question.status = 0;
+    });
 
 }
 
@@ -247,20 +260,22 @@ const closeGame = () => {
     endGame();
     result.style.visibility = 'visible';
 
+
 };
 
 const endGame = () => {
     clearInterval(crono);
+
+
     endGameDisplay.style.display = 'flex';
     panelGame.style.visibility = 'hidden';
     send.style.visibility = 'hidden';
     buttonPasapalabra.style.visibility = 'hidden';
     questionJS.style.visibility = 'hidden';
     userAnswer.style.visibility = 'hidden';
-
-    startButton.disabled = true;
-    showResult();
     infoGame.style.visibility = 'hidden';
+
+    showResult();
     getRanking();
 };
 
@@ -283,7 +298,6 @@ const getRanking = () => {
 
 
 send.addEventListener('click', checkAnswer);
-
 playAgain.addEventListener('click', restartGame);
 buttonPasapalabra.addEventListener('click', passButton);
 restartButton.addEventListener('click', restartGame);
