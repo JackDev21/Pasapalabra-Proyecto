@@ -159,7 +159,10 @@ const checkAnswer = () => {
         incorrectAnswers++;
         questions[index].status = 1;
     }
-    scoreValue--;
+    if (scoreValue > 0) {
+        scoreValue--;
+    }
+
     score.textContent = scoreValue;
     userAnswer.value = "";
     checkStatus();
@@ -284,4 +287,20 @@ btnName.addEventListener('click', askName);
 
 
 
+document.addEventListener('keypress', (event) => {
 
+    if (event.key === 'Enter') {
+        checkAnswer();
+    }
+
+})
+
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeGame();
+    }
+    if (event.key === 'Control') {
+        passButton();
+    }
+})
