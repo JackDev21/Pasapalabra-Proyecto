@@ -161,6 +161,7 @@ const checkAnswer = () => {
     }
     if (scoreValue > 0) {
         scoreValue--;
+
     }
 
     score.textContent = scoreValue;
@@ -286,14 +287,15 @@ restartButton.addEventListener('click', restartGame);
 btnName.addEventListener('click', askName);
 
 
-
 document.addEventListener('keypress', (event) => {
-
     if (event.key === 'Enter') {
+        askName();
+    }
+    if (event.key === 'Enter' && userAnswer.value) {
         checkAnswer();
     }
 
-})
+});
 
 
 document.addEventListener('keydown', (event) => {

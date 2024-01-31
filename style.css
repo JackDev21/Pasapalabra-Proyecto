@@ -137,7 +137,7 @@ li {
     align-items: center;
     border: 3px solid black;
     border-radius: 50%;
-    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.820);
 }
 
 .timer {
@@ -149,7 +149,7 @@ li {
     align-items: center;
     border: 3px solid black;
     border-radius: 25px;
-    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 0 10px 15px rgba(0, 0, 0, 0.820);
 
 }
 
@@ -162,7 +162,7 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     width: 15vw;
-    height: 15vh;
+    height: 20vh;
     color: rgb(0, 0, 0);
     /* Color del texto */
     border: none;
@@ -696,6 +696,15 @@ footer {
 
 /*Media Queries */
 
+/* Media query para pantallas de hasta 768px de ancho y 1024px de alto */
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1920px) {
     .score {
         left: 5vh
@@ -705,13 +714,38 @@ footer {
         right: 8vh
     }
 
-}
+    .panel-scoretime .userWelcome {
+        font-size: 1.9rem
+    }
 
+    .panel-scoretime .instructions {
+        font-size: 1.5rem
+    }
+
+    .info-game {
+        left: 60vw;
+        top: 88vh;
+    }
+}
 
 @media only screen and (max-width: 1440px) {
 
     .panel-scoretime {
         top: 27vh
+    }
+
+    .welcome {
+        left: 60vw;
+        width: 420px;
+
+    }
+
+    .welcome h2 {
+        font-size: 1.2rem;
+    }
+
+    .welcome #userName {
+        width: 25vw;
     }
 
     .score {
@@ -721,30 +755,64 @@ footer {
     .timer {
         right: 1vh
     }
+
+    .info-game {
+        left: 68vw;
+        top: 88vh;
+        width: 55vw;
+    }
+
+    .showRanking {
+        top: 5vw;
+        left: 63vw;
+    }
+
+
 }
+
 
 
 @media only screen and (max-width: 1024px) {
     .panel-game {
-        max-width: 30vw;
         position: relative;
-        left: 7vw;
+        bottom: 4vh;
+        left: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+
     }
 
-    .timer {
-        left: 1vw;
+    .welcome {
 
+        width: 365px;
+        left: 63vw;
+    }
+
+    .instructions {
+        font-size: 1.5rem;
+
+    }
+
+    .panel-game #txtAnswer {
+        width: 250px;
     }
 
     .score {
-        left: 1vw;
+        left: 0vw;
+    }
+
+    .timer {
+        left: 0vw;
     }
 
     .info-game {
         position: absolute;
-        left: 75vw;
-        top: 90vh;
-        max-width: 40vw;
+        left: 77vw;
+        top: 85vh;
+        width: 40vw;
         font-size: 1rem;
     }
 
@@ -758,16 +826,18 @@ footer {
         /* Encoge el círculo a 80% de su tamaño original */
     }
 
+    .showRanking {
+        position: absolute;
+        top: 10vh;
+        left: 63vw;
+        height: 200px;
+    }
+
     footer {
         left: 25vw
     }
 
 }
-
-
-
-
-/* Media query para pantallas de hasta 768px de ancho y 1024px de alto */
 
 @media only screen and (max-width: 768px) {
     body {
@@ -776,15 +846,32 @@ footer {
         background-position: center;
     }
 
+    .welcome {
+        position: absolute;
+        top: 90vh;
+        left: 28vw;
+        width: 50vw;
+
+    }
+
+    .start {
+        width: 200px;
+    }
+
+    #userName {
+        min-width: 250px;
+    }
+
+
     footer {
         font-size: 20px;
-        left: 18vw;
+        left: 15vw;
     }
 
 
     .panel-circle .circle {
         width: auto;
-        right: 33vw;
+        right: 30vw;
 
     }
 
@@ -806,27 +893,29 @@ footer {
     .panel-scoretime {
         left: -15vw;
         top: 24vh;
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .score {
         width: auto;
         padding: 10px;
-        right: 10vw;
+        left: 10vw;
     }
 
     .timer {
         width: auto;
         padding: 10px;
-        left: 10vw;
+        left: 5vw;
     }
 
     .info-game {
-        max-width: 60vw;
-        top: 140vh;
-        left: 35vh;
+        width: 85vw;
+        top: 120vh;
+        left: 53vw;
         padding: 5px;
         padding-bottom: 50px;
+        font-weight: bolder;
+
 
     }
 
