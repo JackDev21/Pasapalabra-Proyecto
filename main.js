@@ -13,7 +13,6 @@ let round = 1;
 let crono;
 let scoreValue = 27;
 
-
 const welcome = document.querySelector(".welcome");
 const btnName = document.querySelector("#btnName");
 const correctName = document.querySelector(".correctName");
@@ -69,7 +68,6 @@ const askName = () => {
 
         startButton.addEventListener('click', startGame);
     }
-
 }
 
 const startGame = () => {
@@ -94,7 +92,6 @@ const startGame = () => {
 
         crono = null;
         timeDisplay();
-
     }
 };
 
@@ -216,8 +213,6 @@ const resetGame = () => {
     timer.innerHTML = 200;
     score.textContent = 27;
 
-
-
     // Restablecer el array de preguntas
     questions = getQuestions();
 
@@ -269,8 +264,6 @@ const endGame = () => {
 
     showResult();
     getRanking();
-
-
 };
 
 let ranking = []
@@ -287,7 +280,6 @@ const getRanking = () => {
     }
 }
 
-
 send.addEventListener('click', checkAnswer);
 playAgain.addEventListener('click', restartGame);
 buttonPasapalabra.addEventListener('click', passButton);
@@ -299,9 +291,7 @@ document.addEventListener('keypress', (event) => {
     if (event.key === 'Enter' && userAnswer.value) {
         checkAnswer();
     }
-
 });
-
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
