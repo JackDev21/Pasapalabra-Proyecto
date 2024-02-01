@@ -160,7 +160,6 @@ const checkAnswer = () => {
     }
     if (scoreValue > 0) {
         scoreValue--;
-
     }
 
     score.textContent = scoreValue;
