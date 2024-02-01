@@ -3,7 +3,7 @@ const sumOfQuestions = [
         {
             letter: "a",
             answer: "Apu",
-            question: "Con la A: ¿Quién es el dueño de la tienda Kwik-E-Mart?1",
+            question: "Con la A: ¿Quién es el dueño de la tienda Kwik-E-Mart?",
         },
         {
             letter: "a",
@@ -37,7 +37,7 @@ const sumOfQuestions = [
         {
             letter: "c",
             answer: "Central Nuclear",
-            question: "Con la C: ¿Donde trabaja Homer Simpson?1",
+            question: "Con la C: ¿Donde trabaja Homer Simpson?",
         },
         {
             letter: "c",
@@ -47,14 +47,14 @@ const sumOfQuestions = [
         {
             letter: "c",
             answer: "China",
-            question: "Con la C: País donde la hermana de Marge, Selma adopta un bebé",
+            question: "Con la C: País donde la hermana de Marge, Selma, adopta un bebé",
         }
     ],
     [
         {
             letter: "d",
             answer: "Duff",
-            question: "Con la D: ¿Cómo se llama la cerveza favorita en Springfield?1",
+            question: "Con la D: ¿Cómo se llama la cerveza favorita en Springfield?",
 
         },
         {
@@ -65,15 +65,15 @@ const sumOfQuestions = [
         },
         {
             letter: "d",
-            answer: "Duff",
-            question: "Con la D: ¿Cómo se llama la cerveza favorita en Springfield?3",
+            answer: "Flanders",
+            question: "Contiene la D: ¿Cómo se apellida el vecino de los Simpson?",
         }
     ],
     [
         {
             letter: "e",
             answer: "Edna",
-            question: "Con la E: ¿Quién es la maestra de Bart Simpson?1",
+            question: "Con la E: ¿Quién es la maestra de Bart Simpson?",
         },
         {
             letter: "e",
@@ -82,8 +82,8 @@ const sumOfQuestions = [
         },
         {
             letter: "e",
-            answer: "Edna",
-            question: "Con la E: ¿Quién es la maestra de Bart Simpson?3",
+            answer: "Matt Groening",
+            question: "Contiene la E: ¿Quién es el creador de los Simpson (nombre y apellidos)?",
         }
 
     ],
@@ -92,17 +92,17 @@ const sumOfQuestions = [
         {
             letter: "f",
             answer: "Flanders",
-            question: "Con la F: ¿Cómo se apellida el vecino de los Simpson?1",
+            question: "Con la F: ¿Cómo se apellida el vecino de los Simpson?",
         },
         {
             letter: "f",
-            answer: "Flanders",
-            question: "Con la F: ¿Cómo se apellida el vecino de los Simpson?2",
+            answer: "Flameado de Moe",
+            question: "Con la F: Famosa bebida que creó Homer Simpson en el bar de Moe",
         },
         {
             letter: "f",
-            answer: "Flanders",
-            question: "Con la F: ¿Cómo se apellida el vecino de los Simpson?3",
+            answer: "Duff",
+            question: "Contiene la F: ¿Cómo se llama la cerveza favorita en Springfield?",
         }
 
     ],
@@ -132,7 +132,7 @@ const sumOfQuestions = [
         {
             letter: "h",
             answer: "Homer",
-            question: "Con la H: ¿Quién es el padre de la familia Simpson?1",
+            question: "Con la H: ¿Quién es el padre de la familia Simpson?",
         },
         {
             letter: "h",
@@ -148,18 +148,18 @@ const sumOfQuestions = [
     [
         {
             letter: "i",
-            answer: "Itchy",
-            question: "Con la I: ¿Cómo se llama el ratón en el show de Krusty el payaso?1",
+            answer: "Lisa",
+            question: "Contiene la I: ¿Quien toca el Saxofon de la familia Simpson?",
+        },
+        {
+            letter: "i",
+            answer: "Iguana",
+            question: "Con la I: ¿Que tipo de animal tiene como mascota Selma?",
         },
         {
             letter: "i",
             answer: "Itchy",
-            question: "Con la I: ¿Cómo se llama el ratón en el show de Krusty el payaso?2",
-        },
-        {
-            letter: "i",
-            answer: "Itchy",
-            question: "Con la I: ¿Cómo se llama el ratón en el show de Krusty el payaso?3",
+            question: "Con la I: ¿Cómo se llama el ratón en el show de Krusty el payaso?",
         }
     ],
     [
@@ -167,7 +167,7 @@ const sumOfQuestions = [
         {
             letter: "j",
             answer: "Jebediah Springfield",
-            question: "Con la J: ¿Quién es el fundador de Springfield?1",
+            question: "Con la J: ¿Quién es el fundador de Springfield (nombre y apellido)?",
         },
         {
             letter: "j",
@@ -176,15 +176,15 @@ const sumOfQuestions = [
         },
         {
             letter: "j",
-            answer: "Jebediah Springfield",
-            question: "Con la J: ¿Quién es el fundador de Springfield?3",
+            answer: "Jimbo",
+            question: "Con la J: Abuson amigo de Nelson",
         }
     ],
     [
         {
             letter: "k",
             answer: "Krusty",
-            question: "Con la K: ¿Cuál es el nombre del payaso en la televisión de Springfield?1",
+            question: "Con la K: ¿Cuál es el nombre del payaso en la televisión de Springfield?",
         },
         {
             letter: "k",
@@ -194,7 +194,7 @@ const sumOfQuestions = [
         {
             letter: "k",
             answer: "Krusty",
-            question: "Con la K: ¿Cuál es el nombre del payaso en la televisión de Springfield?3",
+            question: "Con la K: ¿Cuál es el nombre del payaso en la televisión de Springfield?",
         }
     ],
     [
@@ -202,7 +202,7 @@ const sumOfQuestions = [
         {
             letter: "l",
             answer: "Lisa",
-            question: "Con la L: ¿Cuál es el nombre de la hija mediana de la familia Simpson?1",
+            question: "Con la L: ¿Cuál es el nombre de la hija mediana de la familia Simpson?",
         },
         {
             letter: "l",
@@ -237,7 +237,7 @@ const sumOfQuestions = [
         {
             letter: "n",
             answer: "Ned Flanders",
-            question: "Con la N: ¿Cuál es el nombre del vecino religioso de los Simpson?1",
+            question: "Con la N: ¿Cuál es el nombre del vecino religioso de los Simpson?",
         },
 
         {
@@ -247,50 +247,50 @@ const sumOfQuestions = [
         },
         {
             letter: "n",
-            answer: "Ned Flanders",
-            question: "Con la N: ¿Cuál es el nombre del vecino religioso de los Simpson?3",
+            answer: "Radiactivoman",
+            question: "Contiene la N: ¿Superheroe de comics con traje rojo que le gusta a Bart?",
         }
     ],
     [
         {
             letter: "ñ",
             answer: "Ñu",
-            question: "Con la Ñ: ¿Cuál es el nombre del animal que Homer compra en un episodio para tener como mascota?1",
+            question: "Con la Ñ: Animal africano que aparece en la serie de los simpson"
 
         },
         {
             letter: "ñ",
             answer: "Ñu",
-            question: "Con la Ñ: ¿Cuál es el nombre del animal que Homer compra en un episodio para tener como mascota?2",
+            question: "Con la Ñ: Animal africano que aparece en la serie de los simpson",
         },
         {
             letter: "ñ",
             answer: "Ñu",
-            question: "Con la Ñ: ¿Cuál es el nombre del animal que Homer compra en un episodio para tener como mascota?3",
+            question: "Con la Ñ: Animal africano que aparece en la serie de los simpson",
         }
     ],
     [
         {
             letter: "o",
             answer: "Otto",
-            question: "Con la O: ¿Cuál es el nombre del conductor del autobús escolar?1",
+            question: "Con la O: ¿Cuál es el nombre del conductor del autobús escolar?",
+        },
+        {
+            letter: "o",
+            answer: "Homer",
+            question: "Contiene la O: Padre de Maggie Simpson",
         },
         {
             letter: "o",
             answer: "Otto",
-            question: "Con la O: ¿Cuál es el nombre del conductor del autobús escolar?2",
-        },
-        {
-            letter: "o",
-            answer: "Otto",
-            question: "Con la O: ¿Cuál es el nombre del conductor del autobús escolar?3",
+            question: "Con la O: ¿Cuál es el nombre del conductor del autobús escolar?",
         }
     ],
     [
         {
             letter: "p",
             answer: "Patty",
-            question: "Con la P: ¿Cómo se llama la hermana gemela de Marge?1",
+            question: "Con la P: ¿Cómo se llama la hermana de Marge?",
         },
         {
             letter: "p",
@@ -300,31 +300,31 @@ const sumOfQuestions = [
         {
             letter: "p",
             answer: "Patty",
-            question: "Con la P: ¿Cómo se llama la hermana gemela de Marge?3",
+            question: "Con la P: ¿Cómo se llama la hermana gemela de Selma?",
         }
     ],
     [
         {
             letter: "q",
             answer: "Quimby",
-            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?1",
+            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?",
         },
         {
             letter: "q",
             answer: "Quimby",
-            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?2",
+            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?",
         },
         {
             letter: "q",
             answer: "Quimby",
-            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?3",
+            question: "Con la Q: ¿Cuál es el apellido del alcalde de Springfield?",
         }
     ],
     [
         {
             letter: "r",
             answer: "Ralph",
-            question: "Con la R: ¿Cómo se llama el hijo torpe del Jefe Gorgory Wiggum?1",
+            question: "Con la R: ¿Cómo se llama el hijo torpe del Jefe Gorgory Wiggum?",
         },
         {
             letter: "r",
@@ -345,7 +345,7 @@ const sumOfQuestions = [
         },
         {
             letter: "s",
-            answer: "Shelbyville",
+            answer: "Springfield",
             question: "Con la S: Ciudad de la familia Simpson",
         },
         {
@@ -375,36 +375,36 @@ const sumOfQuestions = [
         {
             letter: "u",
             answer: "Universidad",
-            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?1",
+            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?",
 
         },
         {
             letter: "u",
             answer: "Universidad",
-            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?2",
+            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?",
         },
         {
             letter: "u",
             answer: "Universidad",
-            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?3",
+            question: "Con la U: ¿A qué lugar asiste Lisa cuando es admitida en la academia para niños superdotados?",
         }
     ],
     [
         {
             letter: "v",
             answer: "Violín",
-            question: "Con la V: ¿Qué instrumento musical de cuerda toca Lisa en varios episodios de Los Simpson?1",
+            question: "Con la V: ¿Qué instrumento musical de cuerda toca Lisa en varios episodios de Los Simpson?",
         },
 
         {
             letter: "v",
-            answer: "Violín",
-            question: "Con la V: ¿Qué instrumento musical toca Lisa en varios episodios de Los Simpson?2",
+            answer: "Shelbyville",
+            question: "Contiene la V: Ciudad vecina de Springfield",
         },
         {
             letter: "v",
-            answer: "Violín",
-            question: "Con la V: ¿Qué instrumento musical toca Lisa en varios episodios de Los Simpson?3",
+            answer: "Vegetariana",
+            question: "Con la V: Que tipo de dieta come Lisa Simpson para ayudar a los animales",
         }
     ],
     [
@@ -420,8 +420,8 @@ const sumOfQuestions = [
         },
         {
             letter: "w",
-            answer: "Waylon Smithers",
-            question: "Con la W: ¿Cuál es el nombre del asistente personal de Mr. Burns?3",
+            answer: "Wiggum",
+            question: "Con la W: Apellido de Ralph",
         }
     ],
     [
@@ -429,51 +429,51 @@ const sumOfQuestions = [
         {
             letter: "x",
             answer: "Expediente X",
-            question: "Con la X: ¿Qué serie de televisión parodiaron en un episodio de Halloween?1",
+            question: "Con la X: ¿Qué serie de televisión parodiaron en un episodio de Halloween?",
         },
         {
             letter: "x",
-            answer: "Expediente X",
-            question: "Con la X: ¿Qué serie de televisión parodiaron en un episodio de Halloween?2",
+            answer: "Excelente",
+            question: "Con la X: Frase que más repite el señor Montgomery Burns",
         },
         {
             letter: "x",
-            answer: "Expediente X",
-            question: "Con la X: ¿Qué serie de televisión parodiaron en un episodio de Halloween?3",
+            answer: "Saxofon",
+            question: "Contiene la X: Instrumento que toca Lisa Simpson",
         }
     ],
     [
         {
             letter: "y",
             answer: "Yeti",
-            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?1",
+            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?",
         },
         {
             letter: "y",
             answer: "Yeti",
-            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?2",
+            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?",
         },
         {
             letter: "y",
             answer: "Yeti",
-            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?3",
+            question: "Con la Y: ¿Qué ser mitológico de pies grandes intenta encontrar Bart en el bosque?",
         }
     ],
     [
         {
             letter: "z",
             answer: "Zia",
-            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?1",
+            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?",
         },
         {
             letter: "z",
             answer: "Zia",
-            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?2",
+            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?",
         },
         {
             letter: "z",
             answer: "Zia",
-            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?3",
+            question: "Con la Z: ¿Cuál es el nombre de la hija de Lisa en el futuro?",
         }
     ]
 ];
