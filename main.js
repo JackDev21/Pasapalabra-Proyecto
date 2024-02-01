@@ -69,6 +69,7 @@ const askName = () => {
 
         startButton.addEventListener('click', startGame);
     }
+
 }
 
 const startGame = () => {
@@ -93,6 +94,7 @@ const startGame = () => {
 
         crono = null;
         timeDisplay();
+
     }
 };
 
@@ -214,6 +216,8 @@ const resetGame = () => {
     timer.innerHTML = 200;
     score.textContent = 27;
 
+
+
     // Restablecer el array de preguntas
     questions = getQuestions();
 
@@ -230,6 +234,7 @@ const resetGame = () => {
 
 const showResult = () => {
     startButton.style.visibility = 'hidden'; // Oculta el botón de inicio
+    result.style.visibility = 'visible'; // Muestra el elemento de resultado
     result.textContent = `Respuestas correctas: ${correctAnswers} Respuestas incorrectas: ${incorrectAnswers}`; // Actualiza el texto del elemento de resultado
 }
 
@@ -260,21 +265,24 @@ const endGame = () => {
     questionJS.style.visibility = 'hidden';
     userAnswer.style.visibility = 'hidden';
     infoGame.style.visibility = 'hidden';
+    showRanking.style.visibility = 'visible';
 
     showResult();
     getRanking();
+
+
 };
 
-
+let ranking = []
 const getRanking = () => {
     if (correctAnswers + incorrectAnswers === 27) { // Si la suma de respuestas correctas y incorrectas es 27
-        let ranking = []
         const player = { name: userName, correctAnswers: correctAnswers }// Se crea un objeto con el nombre del usuario y las respuestas correctas
         ranking.push(player); // Se agrega el objeto al array ranking
         ranking.sort((a, b) => b.correctAnswers - a.correctAnswers); // Se ordena el array de mayor a menor por las respuestas correctas
+        showRanking.innerHTML = ''; // Se limpia el contenido del elemento showRanking
+
         ranking.forEach((player, index) => {
             showRanking.innerHTML += `<p>${index + 1}. ${player.name} - ${player.correctAnswers} respuestas correctas</p>`
-
         })
     }
 }
@@ -288,9 +296,6 @@ btnName.addEventListener('click', askName);
 
 
 document.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-        askName();
-    }
     if (event.key === 'Enter' && userAnswer.value) {
         checkAnswer();
     }

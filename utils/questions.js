@@ -7,30 +7,30 @@ const sumOfQuestions = [
         },
         {
             letter: "a",
-            answer: "Apu",
-            question: "Con la A: ¿Quién es el dueño de la tienda Kwik-E-Mart?2",
+            answer: "Ayudante de santa claus",
+            question: "Con la A: ¿Como se llama el perro de la familia Simpson?",
         },
         {
             letter: "a",
-            answer: "Apu",
-            question: "Con la A: ¿Quién es el dueño de la tienda Kwik-E-Mart?3",
+            answer: "Abe",
+            question: "Con la A: Nombre del abuelo de la familia de los Simpson",
         }
     ],
     [
         {
             letter: "b",
-            answer: "Bart",
-            question: "Con la B: ¿Cuál es el hijo mayor de la familia Simpson?1",
+            answer: "Bob",
+            question: "Con la B: ¿Que personaje de los simpson quiere matar siempre a bart?",
         },
         {
             letter: "b",
             answer: "Bart",
-            question: "Con la B: ¿Cuál es el hijo mayor de la familia Simpson?2",
+            question: "Con la B: ¿Cuál es el hijo mayor de la familia Simpson?",
         },
         {
             letter: "b",
-            answer: "Bart",
-            question: "Con la B: ¿Cuál es el hijo mayor de la familia Simpson?3",
+            answer: "Bola de nieve",
+            question: "Con la B: ¿Como se llama el gato de la familia Simpson?",
         }
     ],
     [
@@ -41,13 +41,13 @@ const sumOfQuestions = [
         },
         {
             letter: "c",
-            answer: "Central Nuclear",
-            question: "Con la C: ¿Donde trabaja Homer Simpson?2",
+            answer: "Carl",
+            question: "Con la C: ¿Compañero de trabajo de Homer en la central nuclear que nunca se separa de Lenny?",
         },
         {
             letter: "c",
-            answer: "Central Nuclear",
-            question: "Con la C: ¿Donde trabaja Homer Simpson?3",
+            answer: "China",
+            question: "Con la C: País donde la hermana de Marge, Selma adopta un bebé",
         }
     ],
     [
@@ -59,8 +59,8 @@ const sumOfQuestions = [
         },
         {
             letter: "d",
-            answer: "Duff",
-            question: "Con la D: ¿Cómo se llama la cerveza favorita en Springfield?2",
+            answer: "Duffman",
+            question: "Con la D: Mascota de la cerveza Duff",
 
         },
         {
@@ -77,8 +77,8 @@ const sumOfQuestions = [
         },
         {
             letter: "e",
-            answer: "Edna",
-            question: "Con la E: ¿Quién es la maestra de Bart Simpson?2",
+            answer: "Eddie",
+            question: "Con la E: Compañero policía de Wiggun y Lou",
         },
         {
             letter: "e",
@@ -111,21 +111,21 @@ const sumOfQuestions = [
         {
             letter: "g",
             answer: "Grafiti",
-            question: "Con la G: ¿En qué actividad creativa y a menudo problemática es conocido Bart Simpson?1",
+            question: "Con la G: ¿En qué actividad creativa y a menudo problemática es conocido Bart Simpson?",
 
         },
 
         {
             letter: "g",
-            answer: "Grafiti",
-            question: "Con la G: ¿En qué actividad creativa y a menudo problemática es conocido Bart Simpson?2",
+            answer: "Gato",
+            question: "Con la G: ¿Que tipo de animal tiene la familia Simpson?",
 
         },
 
         {
             letter: "g",
-            answer: "Grafiti",
-            question: "Con la G: ¿En qué actividad creativa y a menudo problemática es conocido Bart Simpson?3",
+            answer: "Gumble",
+            question: "Con la G: Apellido de Barny amigo de Homer Simpson",
         }
     ],
     [
@@ -136,13 +136,13 @@ const sumOfQuestions = [
         },
         {
             letter: "h",
-            answer: "Homer",
-            question: "Con la H: ¿Quién es el padre de la familia Simpson?2",
+            answer: "Hank",
+            question: "Con la H: Maléfico villano dueño de las empresas globex de apellido Scorpio",
         },
         {
             letter: "h",
-            answer: "Homer",
-            question: "Con la H: ¿Quién es el padre de la familia Simpson?3",
+            answer: "Hombre Abeja",
+            question: "Con la H: Mexicano disfrazado en Los Simpson",
         }
     ],
     [
@@ -171,8 +171,8 @@ const sumOfQuestions = [
         },
         {
             letter: "j",
-            answer: "Jebediah Springfield",
-            question: "Con la J: ¿Quién es el fundador de Springfield?2",
+            answer: "Jay",
+            question: "Con la J: Primer apellido de Homer J. Simpson",
         },
         {
             letter: "j",
@@ -188,8 +188,8 @@ const sumOfQuestions = [
         },
         {
             letter: "k",
-            answer: "Krusty",
-            question: "Con la K: ¿Cuál es el nombre del payaso en la televisión de Springfield?2",
+            answer: "Kent",
+            question: "Con la K: Presentador de las noticias de la televisión de Springfield?",
         },
         {
             letter: "k",
@@ -201,18 +201,18 @@ const sumOfQuestions = [
 
         {
             letter: "l",
-            answer: "Lisa Simpson",
+            answer: "Lisa",
             question: "Con la L: ¿Cuál es el nombre de la hija mediana de la familia Simpson?1",
         },
         {
             letter: "l",
-            answer: "Lisa Simpson",
-            question: "Con la L: ¿Cuál es el nombre de la hija mediana de la familia Simpson?2",
+            answer: "Lenny",
+            question: "Con la L: ¿Compañero de trabajo de Homer Simpson en la central nucelar que nunca se separa de Carl?",
         },
         {
             letter: "l",
-            answer: "Lisa Simpson",
-            question: "Con la L: ¿Cuál es el nombre de la hija mediana de la familia Simpson?3",
+            answer: "Luann",
+            question: "Con la L: Mujer de Kirk Van Houten",
         }
     ],
     [
@@ -220,17 +220,17 @@ const sumOfQuestions = [
         {
             letter: "m",
             answer: "Maggie",
-            question: "Con la M: ¿Cómo se llama la hija más pequeña de la familia Simpson?1",
+            question: "Con la M: ¿Cómo se llama la hija más pequeña de la familia Simpson?",
         },
         {
             letter: "m",
-            answer: "Maggie",
-            question: "Con la M: ¿Cómo se llama la hija más pequeña de la familia Simpson?2",
+            answer: "Montgomery Burns",
+            question: "Con la M: ¿Cómo se llama el jefe de la central nuclear?",
         },
         {
             letter: "m",
-            answer: "Maggie",
-            question: "Con la M: ¿Cómo se llama la hija más pequeña de la familia Simpson?3",
+            answer: "Milhouse",
+            question: "Con la M: Mejor amigo de Bart Simpson",
         }
     ],
     [
@@ -242,8 +242,8 @@ const sumOfQuestions = [
 
         {
             letter: "n",
-            answer: "Ned Flanders",
-            question: "Con la N: ¿Cuál es el nombre del vecino religioso de los Simpson?2",
+            answer: "Nelson",
+            question: "Con la N: Abuson del colegio de Springfield",
         },
         {
             letter: "n",
@@ -294,8 +294,8 @@ const sumOfQuestions = [
         },
         {
             letter: "p",
-            answer: "Patty",
-            question: "Con la P: ¿Cómo se llama la hermana gemela de Marge?2",
+            answer: "Pica",
+            question: "Con la P: Raton de la serie de Krusty el payaso ",
         },
         {
             letter: "p",
@@ -328,47 +328,47 @@ const sumOfQuestions = [
         },
         {
             letter: "r",
-            answer: "Ralph",
-            question: "Con la R: ¿Cómo se llama el hijo torpe del Jefe Gorgory Wiggum?2",
+            answer: "Rod",
+            question: "Con la R: Hijo mayor de Ned Flanders",
         },
         {
             letter: "r",
-            answer: "Ralph",
-            question: "Con la R: ¿Cómo se llama el hijo torpe del Jefe Gorgory Wiggum?3",
+            answer: "Rasca",
+            question: "Con la R: Gato negro de la serie de dibujos de Krusty el payaso",
         }
     ],
     [
         {
             letter: "s",
             answer: "Selma",
-            question: "Con la S: ¿Cómo se llama la hermana gemela de Marge?1",
+            question: "Con la S: ¿Cómo se llama la hermana gemela de Marge?",
         },
         {
             letter: "s",
-            answer: "Selma",
-            question: "Con la S: ¿Cómo se llama la hermana gemela de Marge?2",
+            answer: "Shelbyville",
+            question: "Con la S: Ciudad de la familia Simpson",
         },
         {
             letter: "s",
-            answer: "Selma",
-            question: "Con la S: ¿Cómo se llama la hermana gemela de Marge?3",
+            answer: "Seymour Skinner",
+            question: "Con la S: Nombre y apellido del director del colegio de Springfield",
         }
     ],
     [
         {
             letter: "t",
             answer: "Troy McClure",
-            question: "Con la T: ¿Cómo se llama el actor secundario en los Simpson?1",
+            question: "Con la T: Exmarido de Selma Bouvier",
         },
         {
             letter: "t",
-            answer: "Troy McClure",
-            question: "Con la T: ¿Cómo se llama el actor secundario en los Simpson?2",
+            answer: "Todd",
+            question: "Con la T: ¿Cómo se llama el hijo de Ned Flanders?",
         },
         {
             letter: "t",
-            answer: "Troy McClure",
-            question: "Con la T: ¿Cómo se llama el actor secundario en los Simpson?3",
+            answer: "Tenacitas",
+            question: "Con la T: Nombre que le pone Homer a la langosta",
         }
     ],
     [
@@ -393,7 +393,7 @@ const sumOfQuestions = [
         {
             letter: "v",
             answer: "Violín",
-            question: "Con la V: ¿Qué instrumento musical toca Lisa en varios episodios de Los Simpson?1",
+            question: "Con la V: ¿Qué instrumento musical de cuerda toca Lisa en varios episodios de Los Simpson?1",
         },
 
         {
@@ -415,8 +415,8 @@ const sumOfQuestions = [
         },
         {
             letter: "w",
-            answer: "Waylon Smithers",
-            question: "Con la W: ¿Cuál es el nombre del asistente personal de Mr. Burns?2",
+            answer: "Willie",
+            question: "Con la W: Escocés que se encarga del mantenimiento del colegio de Springfield?",
         },
         {
             letter: "w",
